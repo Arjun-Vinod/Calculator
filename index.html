@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div class="calculator">
+        <form>
+            <div class="display">
+                <input type="text" id="display">
+            </div>
+            <div class="first">
+                <input type="button" value="C" onclick="clearDisplay()">
+                <input type="button" value="DEL" onclick="deleteLast()">
+                <input type="button" value="%" onclick="addValue('%')"> 
+                <input type="button" value="=" class="right" onclick="calculate()">            
+            </div>
+            <div class="second">
+                <input type="button" value="7" onclick="addValue('7')">
+                <input type="button" value="8" onclick="addValue('8')">
+                <input type="button" value="9" onclick="addValue('9')">
+                <input type="button" value="/" class="right" onclick="addValue('/')"> 
+            </div>
+            <div class="third">
+                <input type="button" value="4" onclick="addValue('4')">
+                <input type="button" value="5" onclick="addValue('5')">
+                <input type="button" value="6" onclick="addValue('6')">
+                <input type="button" value="*" class="right" onclick="addValue('*')"> 
+            </div>
+            <div class="fourth">
+                <input type="button" value="1" onclick="addValue('1')">
+                <input type="button" value="2" onclick="addValue('2')">
+                <input type="button" value="3" onclick="addValue('3')">
+                <input type="button" value="-" class="right" onclick="addValue('-')"> 
+            </div>
+            <div class="fifth">
+                <input type="button" value="0" onclick="addValue('0')">
+                <input type="button" value="00" onclick="addValue('00')">
+                <input type="button" value="." onclick="addValue('.')">
+                <input type="button" value="+" class="right" onclick="addValue('+')"> 
+            </div>
+        </form>
+    </div>
+</div>
+<script src="./cal.js"></script>
+</body>
+
+</html>
